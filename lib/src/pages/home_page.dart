@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
     }
 
     if (futureString != null) {
-      final scan = ScanModel(valor: futureString);
+      final scan = ScanModel(valor: futureString.rawContent);
       scansBloc.agregarScan(scan);
 
       if (Platform.isIOS) {
